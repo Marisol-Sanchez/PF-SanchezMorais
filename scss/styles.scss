@@ -9,8 +9,9 @@ $font-size-md: 60px;
 $font-size-lg: 70px;
 
 // Estilos
+
 .bC {
-  background-color: $celeste;
+  background-color: $celeste!important;
 }
 
 .bcInd {
@@ -56,4 +57,5 @@ h1 {
     font-size: $font-size-xs;
   }
 }
+
 
