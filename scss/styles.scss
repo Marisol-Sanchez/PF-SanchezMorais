@@ -1,0 +1,59 @@
+// Colores
+$celeste: rgb(62, 189, 231);
+$gris: lightslategray;
+$black: black;
+
+// Tamaños de fuente
+$font-size-xs: 40px;
+$font-size-md: 60px;
+$font-size-lg: 70px;
+
+// Estilos
+.bC {
+  background-color: $celeste;
+}
+
+.bcInd {
+  background-color: $gris;
+}
+.form {
+  border: 4px solid $black;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.pB {
+  padding-bottom: 35px;
+}
+
+.pCero {
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.titu {
+  color: $black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: $font-size-xs;
+
+  @media (min-width: 1024px) {
+    transform: translate(-10px, -231px);
+    font-size: $font-size-lg;
+  }
+
+  @media (min-width: 769px) and (max-width: 1023px) {
+    transform: translate(-10px, -185px);
+    font-size: $font-size-md;
+  }
+
+  @media (max-width: 768px) {
+    transform: translate(-10px, -80px);
+    font-size: $font-size-xs;
+  }
+}
+
