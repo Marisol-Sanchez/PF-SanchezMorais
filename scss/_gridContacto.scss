@@ -2,9 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Bebas Neue", cursive;
 }
-
   .headerLogo{
     background-color: $celeste;
     .logo{
@@ -34,7 +32,9 @@
     }
 }
 
-
+.grid{ 
+    font-family: "Bebas Neue", cursive;
+}
     .gridMainContacto{
         .tituloContacto{
             text-align: center;
@@ -65,9 +65,10 @@
         display:flex;
         align-items: center;
         justify-content: space-evenly;
-        .txtCopy{
-            text-align: center;
-        }
+    }
+    .txtCopy{
+        text-align: center;
+        padding: 10px;
     }
     
     
@@ -81,13 +82,11 @@
             "footer";
             grid-template-columns: 100%;
             grid-template-rows: auto auto auto;
+            font-family: "Bebas Neue", cursive;
         }
         header{grid-area: header;}
         main{grid-area: main;}
         footer{grid-area:footer;}
-        
-    
-        /* grids */
     
         .gridMainContacto{
             display:grid;
@@ -120,6 +119,9 @@
             display:flex;
             align-items: center;
             justify-content: space-evenly;
+            .txtCopy{
+                text-align: center;
+            }
         }
         .headerLogo{
             display: flex;
@@ -136,10 +138,21 @@
     
     /* MOBILE */
     @media (max-width:768px){
+        .gridMainContacto{
+            .tituloContacto{
+                h2{
+                    font-size: 20px;
+                    padding: 0;
+                }
+            }
+        }
         .redesFoo{
             display:flex;
             align-items: center;
             justify-content: space-evenly;
+            .txtCopy{
+                text-align: center;
+            }
         }
         .headerLogo{
             display: flex;
