@@ -1,0 +1,23 @@
+
+$gris: lightgrey;
+$celeste: rgb(62, 189, 231);
+
+//  cards indumentaria
+
+.cardInd{
+    background-color: $gris;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: $celeste;
+    }
+}
+    
+
+// cards index
+
+.card{
+    background-color: $gris;
+    border-radius: 20px;
+    align-items: center;
+    }
+      

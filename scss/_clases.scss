@@ -1,0 +1,33 @@
+// Tamaños de fuente
+$font-size-xs: 28px;
+$font-size-md: 60px;
+$font-size-lg: 70px;
+
+// mixin
+  @mixin transform-titu($translateX: 0, $translateY: 0) {
+    transform: translateX($translateX) translateY($translateY);
+  }
+  
+  .tituClases {
+    color: $black;
+    font-family: 'Bebas Neue', cursive;
+    // font-size: $font-size-xs;
+  
+    @media (min-width: 1024px) {
+      @include transform-titu(-25px, -240px);
+      font-size: $font-size-lg;
+    }
+  
+    @media (min-width: 769px) and (max-width: 1023px) {
+      @include transform-titu(-10px, -185px);
+      font-size: $font-size-md;
+    }
+  
+    @media (max-width: 768px) {
+      @include transform-titu (-6px, -80px);
+      font-size: $font-size-xs;
+    }
+  }
+ 
+
+  

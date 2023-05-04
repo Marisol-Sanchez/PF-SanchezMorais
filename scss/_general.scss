@@ -1,14 +1,9 @@
 // Colores
 $celeste: rgb(62, 189, 231);
 $black: black;
-$gris: lightslategray;
+$gris: lightgrey;
     
-// Tamaños de fuente
-$font-size-xs: 40px;
-$font-size-md: 60px;
-$font-size-lg: 70px;
-
-h1 {
+h1,h2 {
   font-family: "Bebas Neue", cursive;
 }
 
@@ -16,56 +11,31 @@ h1 {
     background-color: $celeste;
 }
 
+.bcBack{
+  background-color: lightgrey;
+} 
+
 .pB {
     padding-bottom: 35px;
 }
 .pCero {
     padding: 0;
 }
-// mixin
-  @mixin transform-titu($translateX: 0, $translateY: 0) {
-    transform: translateX($translateX) translateY($translateY);
-  }
-  
-  .tituIndex {
-    color: $black;
-    font-family: 'Bebas Neue', cursive;
-    font-size: $font-size-xs;
-  
-    @media (min-width: 1024px) {
-      @include transform-titu(-25px, -231px);
-      font-size: $font-size-lg;
-    }
-  
-    @media (min-width: 769px) and (max-width: 1023px) {
-      @include transform-titu(-10px, -185px);
-      font-size: $font-size-md;
-    }
-  
-    @media (max-width: 768px) {
-      @include transform-titu (-10px, -100px);
-      font-size: $font-size-md;
-    }
-  }
- 
-
-
-
-.bcIndumentaria {
-    background-color: $gris;
-}
 
 .pad{
   padding: 10px;
 }
 
-
-.form {
-  border: 4px solid $black;
+.img-fluid{
+  width:100%;height: auto;
 }
-
 
 .mCero{
   margin: 0;
 }
+
+
+
+ 
+
 
